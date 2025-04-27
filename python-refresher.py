@@ -32,16 +32,35 @@
 # print(my_list)
 
 """ Sets and Tuples """
-my_sets = {1,2,3,4,5,1,2}
-print(my_sets)
-my_sets.add(6)
-print(my_sets)
-my_sets.update([6,7])
-print(my_sets)
-my_sets.remove(5)
-print(my_sets)
-my_sets.discard(2)
-print(my_sets)
-print("+++++++++++++++++++++++++++")
-my_tuples = (1,2,3,4,5,1,2)
-print(my_tuples.count(5))
+# my_sets = {1,2,3,4,5,1,2}
+# print(my_sets)
+# my_sets.add(6)
+# print(my_sets)
+# my_sets.update([6,7])
+# print(my_sets)
+# my_sets.remove(5)
+# print(my_sets)
+# my_sets.discard(2)
+# print(my_sets)
+# print("+++++++++++++++++++++++++++")
+# my_tuples = (1,2,3,4,5,1,2)
+# print(my_tuples.count(5))
+
+""" Dictionaries """
+my_dict = {
+    "name" : "mahfuz",
+    "age" : 23,
+    "ID" : 1138 
+}
+print(my_dict)
+print(my_dict.get('age'))
+my_dict.pop('ID')
+print(my_dict)
+my_dict["section"] = "31B1"
+print(my_dict.items())
+my_dict2 = my_dict.copy()
+my_dict2.pop('age')
+print(my_dict2, my_dict)
+
+for x,y in my_dict.items():
+    print(x + "-" + str(y))
