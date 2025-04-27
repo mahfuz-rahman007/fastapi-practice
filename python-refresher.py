@@ -19,14 +19,29 @@
 
 """ List Type """
 
-my_list = [45,87,12,37,92,33]
-print(my_list)
-print(my_list[2])
-my_list[0] = 41
-print(my_list[-2:-1])
-my_list.append(100)
-my_list.insert(2,50)
-my_list.remove(92)
-my_list.pop(-1)
-my_list.sort(reverse=True)
-print(my_list)
+# my_list = [45,87,12,37,92,33]
+# print(my_list)
+# print(my_list[2])
+# my_list[0] = 41
+# print(my_list[-2:-1])
+# my_list.append(100)
+# my_list.insert(2,50)
+# my_list.remove(92)
+# my_list.pop(-1)
+# my_list.sort(reverse=True)
+# print(my_list)
+
+""" Sets and Tuples """
+my_sets = {1,2,3,4,5,1,2}
+print(my_sets)
+my_sets.add(6)
+print(my_sets)
+my_sets.update([6,7])
+print(my_sets)
+my_sets.remove(5)
+print(my_sets)
+my_sets.discard(2)
+print(my_sets)
+print("+++++++++++++++++++++++++++")
+my_tuples = (1,2,3,4,5,1,2)
+print(my_tuples.count(5))
