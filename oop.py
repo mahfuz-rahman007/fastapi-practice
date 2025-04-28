@@ -1,33 +1,36 @@
 class Animal:
-    weight:int = 10
+    def __init__(self, animal, weight=10, color='black'):
+        self.__animal = animal 
+        self.weight = weight
+        self.color = color
 
     def walk(self):
-        print("Animal Walking")
+        print(f"{self.__animal} is Walking")
     
-    def eat(self):
-        print("Animal Eating")
+    def prop(self):
+        print(f"{self.__animal} is weight {self.weight} and color is {self.color}")
 
 class Dog(Animal):
-    leg:int = 4
+    
+    def __init__(self, weight=10, color='black'):
+        super().__init__(animal='Dog', weight=weight, color=color)
 
     def bark(self):
-        print("Dog Barking")
+        print("Dog is Barking")
 
 class Bird(Animal):
-    leg:int = 2
+    def __init__(self, weight=10, color='black'):
+        super().__init__(animal="Bird", weight=weight, color=color)
 
     def fly(self):
         print("Bird Flying")
 
-    def walk(self):
-        print("Bird is Walking")
-
-dog = Dog()
+dog = Dog(20, "Brown")
+dog.prop()
 dog.bark()
 dog.walk()
-dog.eat()
 print("====================")
-bird = Bird()
-bird.eat()
+bird = Bird(5, "White")
+bird.prop()
 bird.walk()
 bird.fly()
